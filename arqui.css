@@ -1,0 +1,105 @@
+#goodbay{
+    color: blue;
+    text-align: center;
+    background-color: brown;
+    font-style: italic;
+}
+.vivo{
+    color:rgb(129, 249, 10);
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(215, 117, 234);
+}
+.olácomovai{
+    color:rgb(243, 83, 30);
+    text-align: center;
+    background-color: rgb(6, 146, 146);
+}
+p{
+    color:red
+}
+p{
+    color:rgb(211, 114, 58);
+    text-align: center;
+    background-color: rgb(233, 235, 199);
+}
+div{
+     /* propriedades decorativas */
+     border: solid 5px rgb(231, 16, 16);
+     display: inline-block;
+     font-size: 32px;
+     font-family: Arial;
+     /* propriedades que fazem o "problema" */
+     width: 170px;
+     height: 80px; 
+     margin-top: 30px;
+     margin-left: 700px;
+ 
+}
+div{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+}
+/* forma abreviada: top, right, bottom, left */
+div{
+    margin: 5px 10px 12px 15px;
+}
+div{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+/* forma abreviada: top, right, bottom, left */
+}
+div{
+    padding: 50px 60px 12px 15px;
+}
+div{
+    border-top: solid 5px rgb(180, 17, 226);
+    border-right: solid 10px cyan;
+    border-bottom: solid 7px green;
+    border-left: solid 12px yellow;
+
+    border-radius: 30px;
+    /* faz um círculo
+    border-radius: 100%;  */
+}
+p {
+    /*é um elemento em bloco que converto em linha*/
+    display: inline;
+    background-color: rgb(246, 246, 13);
+
+}
+
+span {
+    /*é um elemento em linha que converto em bloco*/
+    display: block;
+    background-color: rgb(71, 62, 62);
+    text-align: center;
+}
+div{
+   
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    position: sticky;
+    top: 300px;
+
+}
+div:hover { 
+    color: orange; 
+}
+a:active { 
+    color: blue; 
+}
+a:visited { 
+    color: red; 
+}
+input:focus{
+    background-color: yellow;
+}
+
+
+
