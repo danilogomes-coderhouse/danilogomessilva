@@ -100,6 +100,49 @@ a:visited {
 input:focus{
     background-color: yellow;
 }
+div {
+    width: 60px;
+    height: 60px;
+    background-color: skyblue;
+  }
+  
+  .moved {
+    /* Equal to: translateX(10px) or translate(10px, 0) */
+    transform: translate(10px);
+    background-color: pink;
+  }
+  div {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+  }
+  
+  .rotated {
+    transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    background-color: pink;
+  }
+  body {
+    margin: 20px;
+  }
+  
+  div {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(222, 229, 232);
+  }
+  
+  .skewed {
+    transform: skew(10deg); /* Equal to skewX(10deg) */
+    background-color: rgb(34, 185, 59);
+  }
+  a {
+    background-color: powderblue;
+    transition: background-color 0.9s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
 
 
 
