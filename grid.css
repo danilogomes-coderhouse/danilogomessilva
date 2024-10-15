@@ -87,9 +87,8 @@ img{
 .grid1 > div .prova{
     grid-column: 1;
     grid-row: 2 / 5;
-    border-top: 10px solid tomato;
+    background-image: linear-gradient(45deg, #716262 25%, rgba(239, 239, 239, 0) 25%, rgba(239, 239, 239, 0) 75%, #7e6a6a 75%, #efefef), linear-gradient(45deg, #efefef 25%, rgba(239, 239, 239, 0) 25%, rgba(239, 239, 239, 0) 75%, #efefef 75%, #efefef);
 }
-
 @media (max-width: 600px){
     .grid1{
         grid-template-columns: 1fr 1fr;
