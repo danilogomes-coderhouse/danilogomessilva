@@ -1,27 +1,62 @@
-let botaoSom = document.querySelector(".botao-som")
-let video = document.querySelector(".video")
-let botao = document.querySelector(".link-info")
-let modal = document.querySelector(".modal")
+let dolar = 5.1
 
-botaoSom.addEventListener("click", ligarsom)
+let usdInput = document.querySelector("#usd")
+let brlInput = document.querySelector("#brl")
 
-function ligarsom(){
-    video.muted = false
+usdInput.addEventListener("keyup", () => {
+    convert("usd-to-brl")
+})
+
+brlInput.addEventListener("keyup", () => {
+    convert("brl-to-usd")
+})
+
+usdInput.addEventListener("blur", () => {
+    usdInput.value = formatCurrency(usdInput.value)
+})
+
+brlInput.addEventListener("blur", () => {
+    brlInput.value = formatCurrency(brlInput.value)
+})
+
+usdInput.value = "1000,00"
+convert("usd-to-brl")
+
+function formatCurrency(value) {
+    let fixedValue = fixValue(value)
+    let options = {
+        useGrouping: false, 
+        minimumFractionDigits: 2
+    }
+    let formatter = new Intl.NumberFormat("pt-br", options)
+    return formatter.format(fixedValue)
 }
 
-botao.addEventListener("click", mostrarmodal)
-modal.addEventListener("click", escondermodal)
-
-function mostrarmodal(){
-    modal.style.display = "block"
+function fixValue(value) {
+    let fixedValue = value.replace(",", ".")
+    let floatValue = parseFloat(fixedValue)
+    if (floatValue == NaN) {
+        floatValue = 0
+    }
+    return floatValue
 }
 
-function escondermodal(){
-    modal.style.display = "none"
-}
+function convert(type) {
+    if (type == "usd-to-brl") {
+        let fixedValue = fixValue(usdInput.value)
 
-window.addEventListener("load", tocaraudio)
+        let result = fixedValue * dolar
+        result = result.toFixed(2)
 
-function ligarsom(){
-    Audio.apply()
+        brlInput.value = formatCurrency(result)
+    }
+
+    if (type == "brl-to-usd") {
+        let fixedValue = fixValue(brlInput.value)
+
+        let result = fixedValue / dolar
+        result = result.toFixed(2)
+
+        usdInput.value = formatCurrency(result)
+    }
 }

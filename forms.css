@@ -1,0 +1,109 @@
+body{
+   background-image: url(https://e0.pxfuel.com/wallpapers/745/87/desktop-wallpaper-classic-ford-mustang-mustang-car.jpg);
+    color: white;
+    font-family: "Geologica", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-size: cover;
+    
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+    font-size: 25px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: rgb(5, 46, 46);
+}
+
+a:hover {
+    color: #d4e4f0;
+    transition: 0.3s all;
+}
+
+#Inscreva-se-btn {
+    border: 2px solid #274862;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#Inscreva-se-btn:hover {
+    background-color: #274862;
+    color: white;
+}
+
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 10px;
+    font-family: "Geologica", sans-serif; 
+}
+
+span {
+    color: #274862;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: "Geologica", sans-serif; 
+}
+
+img {
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #274862;
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}

@@ -1,0 +1,43 @@
+body {
+    background-image: radial-gradient(#09d39695, #274862);
+}
+
+#logo {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo2 {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+footer {
+    border-radius: 50px;
+    height: 55px;
+    width: 200px;
+    text-transform: uppercase;
+    border: 8px solid #791fd3;
+    background-color: #beff1b;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: "League Gothic", sans-serif;
+  
+}
