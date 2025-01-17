@@ -1,38 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Moeda</title>
-    <link rel="stylesheet" href="./dolar.css"/>
-    <script src="./scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./corressel.css">
+    <title>Meu Carrossel</title>
 </head>
+
 <body>
-    <h1>Minha Moeda</h1>
     <header>
-        <div id="logo">
-            <img  src="./assets/dolar.png" alt="Conversor">
-        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Informações</a>
+            <a href="">Fale Conosco</a>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="logo1">
-                <span class="cur">US$</span>
-                <input id="usd" type="text"/>
+    <main class="container">
+        <div class="list">
+            <div class="list-item">
+                <img src="./assets/paris (1).jpg">
+                <div class="content">
+                    <h2 class="title">Paris</h2>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto recusandae sequi, odio itaque
+                        doloremque facilis, magnam, deserunt eius voluptatibus molestiae consectetur commodi vitae
+                        incidunt aperiam voluptas quis reprehenderit eligendi?</p>
+                    <div class="buttons">
+                        <button>Saiba Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-           <div class="logo2">
-             <span class="cur">R$</span>
-             <input id="brl" type="text"/>
-           </div>
-        </section>
+
+            <div class="list-item">
+                <img src="./assets/praia (1).jpg">
+                <div class="content">
+                    <h2 class="title">Bali</h2>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto recusandae sequi, odio itaque
+                        doloremque facilis, magnam, deserunt eius voluptatibus molestiae consectetur commodi vitae
+                        incidunt aperiam voluptas quis reprehenderit eligendi?</p>
+                    <div class="buttons">
+                        <button>Saiba Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <img src="./assets/veneza2.jpg">
+                <div class="content">
+                    <h2 class="title">Veneza</h2>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto recusandae sequi, odio itaque
+                        doloremque facilis, magnam, deserunt eius voluptatibus molestiae consectetur commodi vitae
+                        incidunt aperiam voluptas quis reprehenderit eligendi?</p>
+                    <div class="buttons">
+                        <button>Saiba Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <img src="./assets/coliseu (1).jpg">
+                <div class="content">
+                    <h2 class="title">Coliseu</h2>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto recusandae sequi, odio itaque
+                        doloremque facilis, magnam, deserunt eius voluptatibus molestiae consectetur commodi vitae
+                        incidunt aperiam voluptas quis reprehenderit eligendi?</p>
+                    <div class="buttons">
+                        <button>Saiba Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumb">
+
+            <div class="thumb-item">
+                <img src="./assets/coliseu (1).jpg" alt="foto cidade">
+                <div class="content">
+                    <h3>Coliseu</h3>
+                    <p>Visite Roma</p>
+                </div>
+
+            </div>
+
+            <div class="thumb-item">
+                <img src="./assets/paris (1).jpg" alt="foto cidade">
+                <div class="content">
+                    <h3>Paris</h3>
+                    <p>Visite Paris</p>
+                </div>
+
+            </div>
+
+            <div class="thumb-item">
+                <img src="./assets/praia (1).jpg" alt="foto cidade">
+                <div class="content">
+                    <h3>Balli</h3>
+                    <p>Visite Balli</p>
+                </div>
+
+            </div>
+
+            <div class="thumb-item">
+                <img src="./assets/veneza2.jpg" alt="foto cidade">
+                <div class="content">
+                    <h3>Veneza</h3>
+                    <p>Visite Veneza</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="back"> < </button>
+            <button class="next"> > </button>
+        </div>
     </main>
 
-    <footer>
-        Feito por Danilo Gomes
-    </footer>
-
+    <script src="./carrossel.js"></script>
 </body>
+
 </html>
