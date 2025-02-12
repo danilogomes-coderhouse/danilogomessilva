@@ -1,4 +1,4 @@
-const objs = [
+[
     {
         "nome": "Danilo",
         "idade": "37",
@@ -11,17 +11,14 @@ const objs = [
         
     },
     {
-        "nome": "José",
+        "nome": "Jose",
         "idade": "27",
-        "esta_trabalhando": false,
+        "esta_trabalhando": null,
         "detalhes_da profissao": {
-            "profissao": false,
-            "empresa": false
+            "profissao": null,
+            "empresa": null
         },
-        "hobbies": ["malhar", "correr"]
+        "hobbies": ["malhar", "correr", "caminhar"]
+        
     }
-]
-
-const jsonData = JSON.stringify(objs)
-
-console.log(jsonData)
+]    
